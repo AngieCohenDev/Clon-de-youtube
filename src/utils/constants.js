@@ -7,8 +7,9 @@ import AccountTreeTwoToneIcon from "@mui/icons-material/AccountTreeTwoTone";
 import TerminalTwoToneIcon from "@mui/icons-material/TerminalTwoTone";
 import BackupTwoToneIcon from "@mui/icons-material/BackupTwoTone";
 import MeetingRoomTwoToneIcon from "@mui/icons-material/MeetingRoomTwoTone";
+ 
 
-export const logo = "https://i.ibb.co/s9Qys2j/logo.png";
+export const logo = "https://www.academit.com.co/imagenes/logo_de_academit-removebg-preview.png";
 
 export const categories = [
   { name: "Home", icon: <HouseTwoToneIcon /> },

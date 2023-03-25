@@ -5,7 +5,7 @@ import { categories } from "../utils/constants";
 
 
 const SideBar = ({selectedCategory, setSelectedCategory}) => (
-  <Stack
+  <Stack 
     direction="row"
     sx={{
       overflow: "auto",
@@ -18,14 +18,14 @@ const SideBar = ({selectedCategory, setSelectedCategory}) => (
         className="category-btn"
         onClick={() => setSelectedCategory(category.name)}
         style={{
-          background: category.name === selectedCategory && "#FC1503",
+          background: category.name === selectedCategory && "#00d4ff",
           color: "white",
         }}
         key={category.name}
       >
         <span
           style={{
-            color: category.name === selectedCategory ? "white" : "red",
+            color: category.name === selectedCategory ? "white" : "#00d4ff",
             marginRight: "15px",
           }}
         >

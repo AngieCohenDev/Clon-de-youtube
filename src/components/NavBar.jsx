@@ -1,4 +1,4 @@
-import { Stack } from "@mui/material";
+import { colors, Stack } from "@mui/material";
 import { Link } from "react-router-dom";
 
 import { logo } from "../utils/constants";
@@ -16,9 +16,11 @@ const NavBar = () => (
       justifyContent: "space-between",
     }}
   >
-    <Link to="/" style={{display: "flex", alignItems:'center'}}>
-        <img src={logo} alt="logo" height={45} />
-    </Link>
+    {/*<Link to="/" style={{ display: "flex", alignItems: "center" }}>
+      <img src={logo} alt="logo" height={55} width={55} />
+  </Link>*/}
+    <h4 style={{paddingLeft:"20px", color:"#00d4ff"}}>ACADEMIT S.A.S</h4>
+
     <SearchBar />
   </Stack>
 );

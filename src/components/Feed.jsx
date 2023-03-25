@@ -30,9 +30,9 @@ const Feed = () => {
         <Typography
           className="copyright"
           variant="body2"
-          sx={{ mt: 1.5, color: "white" }}
+          sx={{ mt: 1.5, color: "gray" }}
         >
-          Copyrigth 2022 Angie Cohen
+          Copyrigth 2023 Academit S.A.S
         </Typography>
       </Box>
 
@@ -44,7 +44,7 @@ const Feed = () => {
           sx={{ color: "white" }}
         >
           {selectedCategory}
-          <span style={{ color: "#F31503" }}> videos</span>
+          <span style={{ color: "#00d4ff" }}> videos</span>
         </Typography>
         <Videos videos={videos} />
       </Box>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Paper, IconButton } from "@mui/material";
-import { Search } from "@mui/icons-material";
+import SearchTwoToneIcon from '@mui/icons-material/SearchTwoTone';
 
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -22,10 +22,11 @@ const SearchBar = () => {
       onSubmit={handleSubmit}
       sx={{
         borderRadius: 20,
-        border: "1px solid #e3e3e3",
+        border: "2px solid #00d4ff",
         pl: 2,
         boxShadow: "none",
         mr: { sm: 5 },
+        display:"flex"
       }}
     >
       <input
@@ -34,8 +35,8 @@ const SearchBar = () => {
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
-      <IconButton type="submit" sx={{ p: "10px", color: "red" }}>
-        <Search />
+      <IconButton type="submit" sx={{ p: "10px", color: "#00d4ff" }}>
+        <SearchTwoToneIcon />
       </IconButton>
     </Paper>
   );
